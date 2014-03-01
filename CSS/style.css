@@ -3,19 +3,23 @@ body{
 }
 
 	.container{
-		width:90%;
-		height:auto;
 		margin: 0 auto;
 		overflow-x: hidden;
 	}
 
+	#one, #two, #three, #four, #five{
+		width:90%;
+		height:auto;
+	}
+
 		header{
+			position: relative;
 			width:100%;
 			height:50px;
 			background: pink;
 		}	
 
-			header #logo{
+			header .logo{
 				float: left;
 				margin: 5px;
 				width: 40px;
@@ -31,7 +35,7 @@ body{
 				padding:10px 0;
 			}
 
-			header #profile{
+			header .profile{
 				float: right;
 				margin: 5px;
 				width: 40px;
@@ -40,25 +44,25 @@ body{
 				background: url(..Imgages/profile.png) no-repeat black;
 			}
 
-			header #pMenu{
+			header .pMenu{
 				clear: both;
-				position: relative;
-				left:88.05%; /*Open 88.05% Closed 100%*/
-				top:-5px;
+				position: absolute;
+				right:-155px; /* Open 5px Closed -155px */
+				top:45px;
 				background: green;
 				width: 150px;
 				height: 400px;
 				padding-top: 10px;
 			}	
 
-				header #pMenu ul{
+				header .pMenu ul{
 					background: red;
 					width: 90%;
 					height: 90%;
 					margin: 0 auto;
 				}
 
-					header #pMenu ul li{
+					header .pMenu ul li{
 						background: purple;
 						width:100%;
 						height:auto;
@@ -66,12 +70,16 @@ body{
 						margin: 10px 0;
 					}
 
-						header #pMenu ul li a{
+						header .pMenu ul li a{
 							background: pink;
 							width: 100%;
 							padding: 10px 0;
 							display: block;
 							text-align: center;
+						}
+
+						header .pMenu ul li a:hover{
+							background: green;
 						}
 
 		section{
@@ -85,11 +93,6 @@ body{
 			section button{
 				display: block;
 				margin: 0 auto;
-			}
-
-			section #contintue{
-				margin: 5px;
-				color: white;
 			}
 
 		footer{
