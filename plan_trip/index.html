@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  <body>
+  	<div id="demo"></div>
+    <div id="map_canvas"></div>
+    <form action="" id="routeForm">
+        <input type="text" id="routeEnd" value="">
+        <input type="text" id="routeStart" value="">
+        <button onclick="calcRoute()">Plan my Trip!</button>
+    </form>
+    <div id="directionsOutput"></div>
+  </body>
+</html>
