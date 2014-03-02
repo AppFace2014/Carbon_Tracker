@@ -57,4 +57,4 @@ $.mobile.changePage(prevpage, {transition: "slide",
 reverse: true}, true, true);
 }
 });
-};
+}

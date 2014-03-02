@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Parse.initialize("v72tuCZdZwu7boW8XlUFOdfypGS52j1rSMw1YYX7",
                    "a6ngpBpVIAyv3UnXLf8iN0OPQnK3AakxEizLjlYA");
 
@@ -53,7 +52,6 @@ Parse.User.logIn(document.getElementById("login-name").value, document.getElemen
   }
 });
 }
-=======
 Parse.initialize("v72tuCZdZwu7boW8XlUFOdfypGS52j1rSMw1YYX7",
                    "a6ngpBpVIAyv3UnXLf8iN0OPQnK3AakxEizLjlYA");
 
@@ -108,4 +106,3 @@ function loginUser(){
   }
 });
 }
->>>>>>> FETCH_HEAD
