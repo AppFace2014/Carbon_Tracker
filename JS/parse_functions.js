@@ -1,6 +1,8 @@
 Parse.initialize("v72tuCZdZwu7boW8XlUFOdfypGS52j1rSMw1YYX7",
                    "a6ngpBpVIAyv3UnXLf8iN0OPQnK3AakxEizLjlYA");
 
+console.log(vehicles_2011.MODEL[0]);
+
 function createUser(){
 var user = new Parse.User();
 user.set("username", document.getElementById("confirm-name").value);
