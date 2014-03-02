@@ -36,15 +36,20 @@
         </header>
     <h1 class="image"><img src="logo.png" alt="logo"></h1>
     <article>
-          <ul>
-        <li><a href="#two">
-          <button class="ui-btn">I'm New</button>
-          </a></li>
-        <li><a href="#five">
-          <button class="ui-btn" id="lightblue">Sign In</button>
-          </a></li>
-      </ul>
-          <a id="link" href="#six">Continue to Site</a> </article>
+        <ul>
+	        <li><a href="#two">
+	          	<button class="ui-btn">I'm New</button>
+	          </a></li>
+	        <li>
+	        	<a href="#five">
+	          		<button class="ui-btn" id="lightblue">Sign In</button>
+	          	</a>
+	       	</li>
+	        <li>
+	          	<a id="link" href="#six">Continue to Site</a>
+	         </li>
+	     </ul>
+    </article>
   </div>
       <!-- wrapper --> 
     </div>
@@ -59,28 +64,28 @@
         </header>
     <h3>Sign Up</h3>
     <article>
-          <div class="image"><img src="images/man.png" alt="man"></div>
-          <form class="signup-form">
-        <ul>
-              <li>
-            <div class="error" style="display:none"></div>
-          </li>
-              <li>
-            <input type="text" id="signup-name" placeholder="Name" name="name"/>
-          </li>
-              <li>
-            <input type="text" id="signup-email" placeholder="Email" name="email"/>
-          </li>
-              <li>
-            <input type="password" id="signup-password" placeholder="Password" name="password"/>
-          </li>
-            </ul>
-        <div class="pgindicator">
-              <div class="circle activeSlide"></div>
-              <div class="circle activeSlide"></div>
-              <div class="circle activeSlide"></div>
-            </div>
-        <!-- pg indicator -->
+        <div class="image"><img src="images/man.png" alt="man"></div>
+        <form class="signup-form">
+	        <ul>
+	            <li>
+	            <div class="error" style="display:none"></div>
+	          	</li>
+	              <li>
+	            <input type="text" id="signup-name" placeholder="Name" name="name"/>
+	          	</li>
+	             <li>
+	            <input type="text" id="signup-email" placeholder="Email" name="email"/>
+	          	</li>
+	            <li>
+	            <input type="password" id="signup-password" placeholder="Password" name="password"/>
+	          	</li>
+	        </ul>
+	        <div class="pgindicator">
+	              <div class="circle activeSlide"></div>
+	              <div class="circle"></div>
+	              <div class="circle"></div>
+	        </div><!-- pg indicator -->
+        
       </form>
         </article>
   </div>
@@ -96,7 +101,7 @@
         </header>
     <h3>Add Vehicle</h3>
     <article>
-          <div class="image"><img src="car.png" alt="car"></div>
+          <div class="image"><img src="images/car.png" alt="car"></div>
           <form>
         <ul>
               <li>
@@ -114,7 +119,7 @@
             </ul>
         <div class="pgindicator">
               <div class="circle"></div>
-              <div class="circle"></div>
+              <div class="circle activeSlide"></div>
               <div class="circle"></div>
             </div>
         <!-- pg indicator -->
@@ -128,49 +133,62 @@
 <!-- CONFIRM INFO -->
 
 <div data-role="page" id="four" data-url="four" class="content">
-      <div class="wrapper">
-    <header>
-          <h2>Carbon Tracker</h2>
-        </header>
-    <h3>Confirm Your Information</h3>
-    <div id="reviewOrder">
-          <ul>
-        <li>
-              <input type="text" id="confirm-name" placeholder="user name" name="userName" />
-            </li>
-        <li>
-              <input type="text" id="confirm-email" placeholder="email" name="email" />
-            </li>
-        <li>
-              <input type="password" id="confirm-password" placeholder="password" name="password" />
-            </li>
-        <li>
-              <input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" />
-            </li>
-        <li>
-              <input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" />
-            </li>
-        <li>
-              <input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" />
-            </li>
-        <li>
-              <input type="text" id="confirm-year" placeholder="year" name="year" />
-            </li>
-      </ul>
-        </div>
-    <!-- reviewOrder -->
+    <div class="wrapper">
+	    <header>
+	        <h2>Carbon Tracker</h2>
+	    </header>
+	    <h3>Confirm Your Information</h3>
+
+	    <article>
+		    <div id="reviewOrder">
+		      	<ul>
+			        <li>
+			            <input type="text" id="confirm-name" placeholder="user name" name="userName" />
+			        </li>
+
+			        <li>
+			            <input type="text" id="confirm-email" placeholder="email" name="email" />
+			        </li>
+
+			        <li>
+			            <input type="password" id="confirm-password" placeholder="password" name="password" />
+			        </li>
+
+			        <li>
+			            <input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" />
+			        </li>
+
+			        <li>
+			            <input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" />
+			        </li>
+
+			        <li>
+			           <input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" />
+			        </li>
+
+			        <li>
+			            <input type="text" id="confirm-year" placeholder="year" name="year" />
+			       	</li>
+
+			        <li>
+			        	<a href="#">
+				          	<button class="ui-btn submitBtn" onclick="createUser();" id="lightblue">Sign In</button>
+				        </a>
+				    </li>
+				</ul>
+		    </div><!-- reviewOrder -->
+		</article>
     
-    <div class="submitBtn" onclick="createUser();"><img src="images/submitBtn.png" alt="page2"></div>
-    <div class="pgindicator">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-    <!-- pg indicator --> 
-  </div>
-      <!-- wrapper --> 
-    </div>
-<!-- page-four --> 
+    	<div class="pgindicator">
+	          <div class="circle"></div>
+	          <div class="circle"></div>
+	          <div class="circle activeSlide"></div>
+        </div><!-- pg indicator -->
+     
+  	</div><!-- wrapper -->
+       
+</div><!-- page-four -->
+ 
 
 <!-- Sign Up -->
 <div data-role="page" id="five" data-url="five" class="content">
