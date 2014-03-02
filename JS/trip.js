@@ -68,16 +68,16 @@ function calcRoute() {
           console.log(userEmail);
       });
 
-      var query = new Parse.Query(Parse.User);
-        query.equalTo(email, userEmail);
-        query.find({
-          success: function(userEmail) {
-            console.log("That's you alright! Come on in!");
-          }
-      });
+      var stat1 = document.getElementById('resultsOutput');
+        stat1.innerHTML = '<h2>Distance:</h2> <p>' + distanceinKM + ' Kilometers</p>';
+      directionsDisplay.setDirections(response);
 
-      var el = document.getElementById('resultsOutput');
-        el.innerHTML = '<p> Distance: ' + distanceinKM + 'KMs</p>';
+      var stat2 = document.getElementById('resultsOutput');
+        stat2.innerHTML = '<h2>Fuel Consumption:</h2> <p>' + distanceinKM + ' Liters</p>';
+      directionsDisplay.setDirections(response);
+
+      var stat3 = document.getElementById('resultsOutput');
+        stat3.innerHTML = '<h2>Emissions:</h2> <p>' + distanceinKM + ' Kilograms</p>';
       directionsDisplay.setDirections(response);
     }
   });
