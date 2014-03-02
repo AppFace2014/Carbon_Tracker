@@ -236,6 +236,9 @@ text-align: center;
 header .pMenu ul li a:hover{
 background-color: #e6e6e6;
 }
+#gif{
+	display: none;
+}
 
 
 

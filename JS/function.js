@@ -68,9 +68,9 @@ function changeMenu(){
 }
 
 function start(){
-	alert('start');
+	document.getElementById('gif').style.display = "block";
 
 }function stop(){
-	alert('stop');
+	document.getElementById('gif').style.display= "none";
 }
 
