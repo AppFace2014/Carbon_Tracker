@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
 	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	<script src="JS/underscore-1.1.6.js"></script>
@@ -57,7 +58,7 @@
 
 			<h3>Sign Up</h3>
 			<article>
-				<div class="image"><img src="man.png" alt="man"></div>
+				<div class="image"><img src="images/man.png" alt="man"></div>
 			
 				<form class="signup-form">
 					<ul>
@@ -66,6 +67,11 @@
 						<li><input type="text" id="signup-email" placeholder="Email" name="email"/></li>
 						<li><input type="password" id="signup-password" placeholder="Password" name="password"/></li>
 					</ul>
+					<div class="pgindicator">
+						<div class="circle activeSlide"></div>
+						<div class="circle activeSlide"></div>
+						<div class="circle activeSlide"></div>
+					</div> <!-- pg indicator -->
 				</form>
 			</article>
 
@@ -87,9 +93,12 @@
 						<li><input type="text" placeholder="year" name="username" /></li>
 						<li><input type="password" placeholder="make" name="password" /></li>
 						<li><input type="password" placeholder="model" name="password" /></li>
-						
-						<li><div class="pgindicator"><img src="images/pg2.png" alt="page2"></div></li>
 					</ul>
+					<div class="pgindicator">
+						<div class="circle"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
+					</div> <!-- pg indicator -->
 				</form>
 			</article>
 		</div> <!-- wrapper -->
@@ -117,7 +126,11 @@
 			</div> <!-- reviewOrder -->
 
 			<div class="submitBtn" onclick="createUser();"><img src="images/submitBtn.png" alt="page2"></div>
-			<div class="pgindicator"><img src="images/pg3.png" alt="page2"></div>
+			<div class="pgindicator">
+				<div class="circle"></div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div> <!-- pg indicator -->
 		</div> <!-- wrapper -->
 	</div> <!-- page-four -->
 
@@ -136,7 +149,7 @@
 			</ul>
 		</form>
 
-		<div class="signInBtn"><a href="#six"><img src="signin.png" alt="signIn button"></a></div>
+		<div class="signInBtn"><a href="#six"><img src="images/car.png" alt="signIn button"></a></div>
 
 		</div> <!-- wrapper -->
 	</div> <!-- page-five -->

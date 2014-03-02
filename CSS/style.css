@@ -11,26 +11,27 @@
 *{
 	margin:0px;
 	padding:0px;
+	text-shadow:none;
 }
 .wrapper{
 	margin: auto;
-	background-image: url('../images/bg.png');
-	background-repeat: no-repeat;
+	background: url('../images/bg.png') no-repeat;
+	background-size: cover;
 	height: auto;
-	width:320px;
+	width:100%;
 }
 .wrapper2{
 	margin: auto;
 	background-color: #e6e6e6;
 	height: auto;
-	width:320px;	
+	width:100%;	
 }
 header{
 	background-color: #355154;
 }
 /*IMG*/
 img{
-	width: 60%;
+	padding-bottom:50px;
 	display: block;
 	margin: 0 auto;
 }
@@ -46,11 +47,10 @@ h2{
 	color: white;
 	font-family: futura;
 	padding: 15px;
-
 	text-align: center;
 }
 h3{
-	font-family: Montserrat*;
+	font-family: 'Montserrat', sans-serif;
 	color: white;
 	padding-left: 20px;
 	padding-top: 20px;
@@ -111,20 +111,47 @@ form ul li input{
 /*INPUT*/
 .ui-input-text{
 	border-radius: 0;
+	border:solid white 2px;
+}
+.ui-input-text input, .ui-input-search input{
+	color:white;
 }
 .ui-body-a, .ui-page-theme-a .ui-body-inherit{
 	background-color:transparent;
 	text-shadow:none;
+	margin-bottom: 30px;
 }
+.ui-page-themea, .ui-focus{
+	box-shadow: none;
+}
+
+/*PAGE INDICATORS*/
+.pgindicator{
+	width:100%;
+	background-color: pink;
+    padding: 0;
+    height: 14px;
+    z-index: 999;
+}
+.circle{
+	width:45px;
+	height:45px;
+	border-radius:100;
+	border: white solid 2px;
+}
+.activeSlide{
+
+}
+
+
+
 ul li{
 	list-style-type: none;
 }
 ul li .pgindicator{
 	margin-left: 25%;
 }
-.pgindicator{
-	margin-left: 30%;
-}
+
 a{
 	color:rgba(255,255,255,1);
 	text-decoration: none;
@@ -134,25 +161,26 @@ a{
 	width: 200px;
 	margin: auto;
 }.submitBtn{
-margin-left: 15px;
+	margin-left: 15px;
 }
 form.signUp{
 	width:200px;
 	margin:auto;
 	padding-bottom: 20px;
-}.signInBtn img{
-
+}
+.signInBtn img{
 	padding: 15px;
 	margin: auto;
-
-}#links{
+}
+#links{
 	padding-top: 20px;
-
-}#links img{
+}
+#links img{
 	padding-bottom: 10px;
 	padding-right: 10px;
 	margin-right: 0px;
-}h3.black {
+}
+h3.black {
 	color: black;
 }
 
