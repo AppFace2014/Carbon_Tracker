@@ -226,7 +226,15 @@
 <div data-role="page" id="six" data-url="six" class="content">
       <div class="wrapper2">
     <header>
+          <div class="profile"></div>
           <h2>Carbon Tracker</h2>
+               <div class="pMenu">
+        <ul data-theme="d">
+              <li><a href="#nine">User Info</a></li>
+              <li><a href="#nine">Vehicle Info</a></li>
+              <li><a href="">Logout</a></li>
+            </ul>
+      </div>
         </header>
     <h3 class="black">Start tracking your carbon dioxide emissions today!</h3>
     <div id="links"> <a href="#seven"><img src="images/planTrip.png" alt="planTrip"></a> <a href="#eight"><img src="images/start.png" alt="planTrip"></a> </div>
@@ -290,7 +298,7 @@
     </div>
 <!-- page eight --> 
 
-<!-- EMISSIONS STATS-->
+<!-- User & Vehicle Info-->
 <div data-role="page" id="nine" data-url="nine" class="content">
       <div class="wrapper">
    <header>
@@ -305,6 +313,43 @@
 
         </header>
  
+         <article>
+        <div id="reviewOrder">
+            <ul>
+              <li><h3>User Info</h3></li>
+              <li>
+                  <input type="text" id="confirm-name" placeholder="user name" name="userName" />
+              </li>
+
+              <li>
+                  <input type="text" id="confirm-email" placeholder="email" name="email" />
+              </li>
+
+              <li>
+                  <input type="password" id="confirm-password" placeholder="password" name="password" />
+              </li>
+               <li><h3>Vehicle Info</h3></li>
+              <li>
+                  <input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" />
+              </li>
+
+              <li>
+                  <input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" />
+              </li>
+
+              <li>
+                 <input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" />
+              </li>
+
+              <li>
+                  <input type="text" id="confirm-year" placeholder="year" name="year" />
+              </li>
+
+        </ul>
+        </div><!-- reviewOrder -->
+
+
+
       <!-- wrapper --> 
     </div>
 <!-- page-nine -->
