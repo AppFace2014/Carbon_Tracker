@@ -67,3 +67,10 @@ function changeMenu(){
 	}	
 }
 
+function start(){
+	alert('start');
+
+}function stop(){
+	alert('stop');
+}
+
