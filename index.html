@@ -246,26 +246,27 @@
 
 <!-- Trip Planner -->
 <div data-role="page" id="seven" data-url="seven" class="content">
-      <div class="wrapper2">
-    <header> <div class="profile"></div>
-          <h2>Carbon Tracker</h2>
-          <div class="pMenu">
+    <div class="wrapper2">
+    <header> 
+    	<div class="profile"></div>
+        <h2>Carbon Tracker</h2>
+        <div class="pMenu">
         <ul data-theme="d">
-              <li><a href="#nine">User Info</a></li>
-              <li><a href="#nine">Vehicle Info</a></li>
-             <li><a href="#"><button class="ui-btn signInBtn" onclick="logOut();" id="lightblue">Logout</button></a></li>
-            </ul>
-      </div>
-          <!-- pMenu --> 
-        </header>
+            <li><a href="#nine">User Info</a></li>
+            <li><a href="#nine">Vehicle Info</a></li>
+            <li><a href="#"><button class="ui-btn signInBtn" onclick="logOut();" id="lightblue">Logout</button></a></li>
+        </ul>
+      </div><!-- pMenu -->
+    </header>
+
     <h3 class="black">Trip Planner</h3>
     <section class="content">
-          <div data-role="content">
+        <div data-role="content">
         <div id="map_canvas" style="width:100%;height:250px"></div>
       </div>
           <!-- content -->
           
-          <div id="locations">
+          <article id="locations">
         <form id="routeForm">
               <input type="text" id="routeStart"/>
               <input type="text" id="routeEnd" />
@@ -274,7 +275,7 @@
             <div class="myOutputs" id="resultsOutput1"></div>
             <div class="myOutputs" id="resultsOutput2"></div>
             <div class="myOutputs" id="resultsOutput3"></div>
-      </div>
+      </article>
           <!-- locations -->
           
           <div id="results" class="ui-listview ui-listview-inset ui-corner-all ui-shadow" style="display:none;">

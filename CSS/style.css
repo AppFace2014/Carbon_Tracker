@@ -164,7 +164,8 @@ a{
 
 
 h3.black {
-color: #4D4D4D}
+	color: #4D4D4D
+}
 
 /*PAGE EIGHT*/
 .opacity-bkgd {
@@ -174,9 +175,32 @@ color: #4D4D4D}
 	background-position:center;
 }
 /*START DRIVING BUTTON*/
-#startDriving{
+#startDriving{url="seven" class="content">
+    <div class="wrapper2">
+    <header> 
+
 	width:80%;
 	margin:0 auto 50px;
+}
+/*TRIPPLANNER*/
+#locations{
+	width:100%;
+}
+#locations input{
+	color: #4D4D4D;
+}
+#locations .myOutputs{
+	width:80%;
+	height:50px;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgba(102,102,102, .8);
+	margin:0 auto;
+	margin-bottom: 20px;
+}
+#locations #routeForm{
+	width:80%;
+	box-shadow: none;
+	margin:0 auto;
 }
 
 /* james code */
