@@ -185,6 +185,12 @@ margin-right: 0px;
 h3.black {
 color: #4D4D4D}
 
+/*PAGE EIGHT*/
+.opacity-bkgd {
+	height: auto;
+	width:100%;	
+	background-image: url('images/opacity-car.png') no-repeat  
+}
 
 
 /* james code */
