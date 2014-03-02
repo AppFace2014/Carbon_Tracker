@@ -106,3 +106,7 @@ function loginUser(){
   }
 });
 }
+function logOut(){
+  Parse.User.logOut();
+   location.href = "#one"
+}
