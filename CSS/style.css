@@ -204,6 +204,8 @@ h3.black {
 				text-indent: -9999px;
 				background: url(../images/nav.png) no-repeat;
 				background-size: 100%;
+				
+
 
 			}
 
@@ -211,7 +213,7 @@ h3.black {
 				clear: both;
 				position: absolute;
 				right:-155px; /* Open 5px Closed -155px */
-				top:45px;
+				top:-12px;
 				width: 150px;
 				height: 250px;
 				margin-top: 65px;
@@ -223,14 +225,16 @@ h3.black {
 					width: 90%;
 					height: 90%;
 					margin: 0 auto;
+					margin-top: 20px;
 				}
 
 					header .pMenu ul li{
 						width:100%;
 						height:auto;
+					
 						display: block;
 						margin: 10px 0;
-						border-bottom: 1px solid white;
+					
 					}
 
 						header .pMenu ul li a{
