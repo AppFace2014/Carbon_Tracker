@@ -69,15 +69,15 @@ function calcRoute() {
       });
 
       var stat1 = document.getElementById('resultsOutput1');
-        stat1.innerHTML = '<h2>Distance:</h2> <p>' + distanceinKM + ' Kilometers</p>';
+        stat1.innerHTML = '<h4>Distance:</h4> <p>' + distanceinKM + ' Kilometers</p>';
       directionsDisplay.setDirections(response);
 
       var stat2 = document.getElementById('resultsOutput2');
-        stat2.innerHTML = '<h2>Fuel Consumption:</h2> <p>' + distanceinKM + ' Liters</p>';
+        stat2.innerHTML = '<h4>Fuel Consumption:</h4> <p>' + distanceinKM + ' Liters</p>';
       directionsDisplay.setDirections(response);
 
       var stat3 = document.getElementById('resultsOutput3');
-        stat3.innerHTML = '<h2>Emissions:</h2> <p>' + distanceinKM + ' Kilograms</p>';
+        stat3.innerHTML = '<h4>Emissions:</h4> <p>' + distanceinKM + ' Kilograms</p>';
       directionsDisplay.setDirections(response);
     } else {
         alert("Error: please try again")
