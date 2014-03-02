@@ -2,7 +2,12 @@
 .ui-page-theme-a{
 	text-shadow:none;
 	color:white;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
 }
+
 *{
 	margin:0px;
 	padding:0px;
@@ -22,6 +27,12 @@
 }
 header{
 	background-color: #355154;
+}
+/*IMG*/
+img{
+	width: 60%;
+	display: block;
+	margin: 0 auto;
 }
 /*logo*/
 h1.image{
@@ -71,10 +82,6 @@ article ul li{
 .ui-page-theme-a .ui-btn a{
 	color:rgba(255,255,255,1);
 	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
 }
 
 .ui-page-theme-a .ui-btn:hover{
@@ -88,18 +95,10 @@ article ul li{
 	background-color: rgba(123, 201, 182,1);
 	text-shadow:none;
 }
-.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited{
-	color:white;
-	font-weight: lighter;
-}
 
 
 
-/*A TAGS*/
-
-
-
-
+/*FORM*/
 form{
 	margin-top:15px;
 	padding-bottom: 80px;	
@@ -107,6 +106,15 @@ form{
 form ul li input{
 	padding: 10px;
 	margin-top: 10px;
+}
+
+/*INPUT*/
+.ui-input-text{
+	border-radius: 0;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit{
+	background-color:transparent;
+	text-shadow:none;
 }
 ul li{
 	list-style-type: none;
