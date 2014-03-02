@@ -47,25 +47,23 @@ $.mobile.changePage(prevpage, {transition: "slide",
 reverse: true}, true, true);
 }
 });
-<<<<<<< HEAD
+
 };
 
 
 function changeMenu(){
-if (menuStatus != "open"){
-console.log("open");
-jQuery('.pMenu').animate({
-right: "5px"
-        }, 300);
-menuStatus = "open";
-} else {
-console.log("closed");
-jQuery('.pMenu').animate({
-right: "-155px"
-        }, 300);
-menuStatus = "closed";
-}	
+	if (menuStatus != "open"){
+	console.log("open");
+	jQuery('.pMenu').animate({
+	right: "5px"
+    }, 300);
+	menuStatus = "open";
+	} else {
+	console.log("closed");
+	jQuery('.pMenu').animate({
+	right: "-155px"
+    }, 300);
+	menuStatus = "closed";
+	}	
 }
-=======
-}
->>>>>>> FETCH_HEAD
+
