@@ -148,7 +148,6 @@ ul li{
 a{
 	color:rgba(255,255,255,1);
 	text-decoration: none;
-<<<<<<< HEAD
 }
 #link{
 	padding-top: 20px;
@@ -161,26 +160,7 @@ a{
 #link:hover{
 	text-decoration: underline;
 }
-=======
-}
-#link{
-	padding-top: 20px;
-	color:white;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	float: right;
-	padding-bottom: 30px;
-}
-#link:hover{
-	text-decoration: underline;
-}
->>>>>>> FETCH_HEAD
-/*#links img{
-padding-bottom: 10px;
-padding-right: 10px;
-<<<<<<< HEAD
-margin-right: 0px;
-}*/
+
 
 h3.black {
 color: #4D4D4D}
