@@ -58,6 +58,20 @@ h3{
 	font-size: 16px;
 }
 
+p{
+	font-family: 'Comfortaa', cursive;
+	color: #292929;
+	font-size: 14px;
+	padding: 10px;
+}
+
+h4{
+	font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+	color: #292929;
+	padding: 4px;
+}
+
 /*ARTICLE SECTION*/
 article{
 	width:100%;

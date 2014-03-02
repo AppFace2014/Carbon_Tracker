@@ -34,7 +34,7 @@ function handleNoGeolocation(errorFlag) {
   if (errorFlag) {
     var content = 'Error: The Geolocation service failed.';
   } else {
-    var content = 'Error: Your browser doesn\'t support geolocation.';
+    var content = "Error: Your browser doesn't support geolocation.";
   }
 
   var options = {
@@ -80,7 +80,7 @@ function calcRoute() {
         stat3.innerHTML = '<h4>Emissions:</h4> <p>' + distanceinKM + ' Kilograms</p>';
       directionsDisplay.setDirections(response);
     } else {
-        alert("Error: please try again")
+        alert("Error: please try again");
     }
   });
 }
