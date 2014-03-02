@@ -47,6 +47,7 @@ $.mobile.changePage(prevpage, {transition: "slide",
 reverse: true}, true, true);
 }
 });
+<<<<<<< HEAD
 };
 
 
@@ -65,3 +66,6 @@ right: "-155px"
 menuStatus = "closed";
 }	
 }
+=======
+}
+>>>>>>> FETCH_HEAD
