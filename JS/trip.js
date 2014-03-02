@@ -64,8 +64,16 @@ function calcRoute() {
       console.log(distanceinKM + " KMs");
 
       Parse.User.current().fetch().then(function (user) {
-          user.get('email');
-          console.log(user.get('email'));
+          var userEmail = user.get('email');
+          console.log(userEmail);
+      });
+
+      var query = new Parse.Query(Parse.User);
+        query.equalTo(email, userEmail);
+        query.find({
+          success: function(userEmail) {
+            console.log("That's you alright! Come on in!");
+          }
       });
 
       var el = document.getElementById('resultsOutput');

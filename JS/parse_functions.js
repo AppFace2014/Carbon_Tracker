@@ -13,6 +13,7 @@ var CarInfo = Parse.Object.extend("CarInfo");
 var carInfo = new CarInfo();
 
 carInfo.set("user", document.getElementById("confirm-name").value);
+carInfo.set("email", document.getElementById("confirm-email").value);
 carInfo.set("carYear", document.getElementById("confirm-year").value);
 carInfo.set("carMake", document.getElementById("confirm-make").value);
 carInfo.set("carModel", document.getElementById("confirm-model").value);
