@@ -1,4 +1,3 @@
-
 .ui-page-theme-a{
 	text-shadow:none;
 	color:white;
@@ -42,6 +41,11 @@ h1.image{
 	margin-left: 0px;
 }
 
+	#one, #two, #three, #four, #five{
+		width:100%;
+		height:auto;
+	}
+
 h2{
 	font-size: 18px;
 	color: white;
@@ -56,6 +60,7 @@ h3{
 	padding-top: 20px;
 	font-size: 16px;
 }
+>>>>>>> FETCH_HEAD
 
 /*ARTICLE SECTION*/
 article{
@@ -198,11 +203,16 @@ h3.black {
 				clear: both;
 				position: absolute;
 				right:-155px; /* Open 5px Closed -155px */
-				top:45px;
+				top:-12px;
 				width: 150px;
+<<<<<<< HEAD
+				height: 400px;
+				padding-top: 10px;
+=======
 				height: 250px;
 				margin-top: 65px;
 				background-color: white;
+>>>>>>> FETCH_HEAD
 				z-index: 20;
 			}	
 
@@ -210,6 +220,7 @@ h3.black {
 					width: 90%;
 					height: 90%;
 					margin: 0 auto;
+					margin-top:20px;
 				}
 
 					header .pMenu ul li{
@@ -232,5 +243,41 @@ h3.black {
 							background-color: #e6e6e6;
 						}
 
+<<<<<<< HEAD
+		section{
+			width:100%;
+			height: auto;
+			background: blue;
+			float: none;
+		}
+
+
+			section button{
+				display: block;
+				margin: 0 auto;
+			}
+
+			section #map_canvas{
+				z-index: 0;
+			}
+
+			section #locations{
+				width:100%;
+			}
+
+		footer{
+			float: none;
+			width:100%;
+			height:50px;
+			background: red;
+		}
+
+			footer p{
+				padding: 15px 0;
+				text-align: center;
+				cursor: default;
+			}
+=======
+>>>>>>> FETCH_HEAD
 
 				
