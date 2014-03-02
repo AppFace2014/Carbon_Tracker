@@ -62,7 +62,9 @@ function calcRoute() {
       console.log(response.routes[0].legs[0].distance.value + " meters");
       var distanceinKM = response.routes[0].legs[0].distance.value/1000;
       console.log(distanceinKM + " KMs");
-      });
+
+      var el = document.getElementById('resultsOutput');
+        el.innerHTML = '<p> Distance: ' + distanceinKM + 'KMs</p>';
       directionsDisplay.setDirections(response);
     }
   });
