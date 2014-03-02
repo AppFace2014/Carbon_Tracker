@@ -89,7 +89,7 @@ function createUser(){
 	user.signUp(null, {
 	  success: function(user) {
 	    console.log("Account created!");
-	    location.href = "#one";
+	    location.href = "#six";
 	  },
 	  error: function(user, error) {
 	    // Show the error message somewhere and let the user try again.
