@@ -167,9 +167,10 @@ color: #4D4D4D}
 
 /*PAGE EIGHT*/
 .opacity-bkgd {
-	height: auto;
+	height: 450px;
 	width:100%;	
-	background-image: url('images/opacity-car.png') no-repeat;  
+	background: url('../images/opacity-car.png') no-repeat;  
+	background-position:center;
 }
 
 
