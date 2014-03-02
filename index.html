@@ -53,117 +53,115 @@
 <a id="link" href="#six">Continue to Site</a>
 </article>
 
+
 </div><!-- wrapper -->
 </div> <!-- page-one -->
 
 <!-- SIGN UP PAGE -->
 
+<div data-role="page" id="two" data-url="two" class="content" >
+<div class="wrapper">
+<header>
+<h2>Carbon Tracker</h2>
+</header>
 
-	<div data-role="page" id="two" data-url="two" class="content" >
-		<div class="wrapper">
-			<header>
-				<h2>Carbon Tracker</h2>
-			</header>
+<h3>Sign Up</h3>
+<article>
+<div class="image"><img src="images/man.png" alt="man"></div>
 
-			<h3>Sign Up</h3>
-			<article>
-				<div class="image"><img src="images/man.png" alt="man"></div>
-			
-				<form class="signup-form">
-					<ul>
-						<li><div class="error" style="display:none"></div></li>
-						<li><input type="text" id="signup-name" placeholder="Name" name="name"/></li>
-						<li><input type="text" id="signup-email" placeholder="Email" name="email"/></li>
-						<li><input type="password" id="signup-password" placeholder="Password" name="password"/></li>
-					</ul>
-					<div class="pgindicator">
-						<div class="circle activeSlide"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-					</div> <!-- pg indicator -->
-				</form>
-			</article>
+<form class="signup-form">
+<ul>
+<li><div class="error" style="display:none"></div></li>
+<li><input type="text" id="signup-name" placeholder="Name" name="name"/></li>
+<li><input type="text" id="signup-email" placeholder="Email" name="email"/></li>
+<li><input type="password" id="signup-password" placeholder="Password" name="password"/></li>
+</ul>
+<div class="pgindicator">
+<div class="circle activeSlide"></div>
+<div class="circle activeSlide"></div>
+<div class="circle activeSlide"></div>
+</div> <!-- pg indicator -->
+</form>
+</article>
 
-		</div> <!-- wrapper -->
-	</div> <!-- page-two -->
+</div> <!-- wrapper -->
+</div> <!-- page-two -->
 
 <!--VEHICLE -->
-	<div data-role="page" id="three" data-url="three" class="content">
-		<div class="wrapper">
-			<header>
-				<h2>Carbon Tracker</h2>
-			</header>
+<div data-role="page" id="three" data-url="three" class="content">
+<div class="wrapper">
+<header>
+<h2>Carbon Tracker</h2>
+</header>
+<h3>Add Vehicle</h3>
+<article>
+<div class="image"><img src="car.png" alt="car"></div>
 
-			<h3>Add Vehicle</h3>
-
-			<article>
-				<div class="image"><img src="images/car.png" alt="car"></div>
-				<form>
-					<ul>
-						<li><input type="text" id="signup-year" placeholder="year" name="year" /></li>
-						<li><input type="text" id="signup-make" placeholder="make" name="make" /></li>
-						<li><input type="text" id="signup-model" placeholder="model" name="model" /></li>
-						<li><input type="text" id="signup-engine" placeholder="engine" name="engine" /></li>
-					</ul>
-
-					<div class="pgindicator">
-						<div class="circle"></div>
-						<div class="circle activeSlide"></div>
-						<div class="circle"></div>
-					</div> <!-- pg indicator -->
-				</form>
-			</article>
-		</div> <!-- wrapper -->
-	</div> <!-- page-three -->
+<form>
+<ul>
+<li><input type="text" placeholder="year" name="username" /></li>
+<li><input type="password" placeholder="make" name="password" /></li>
+<li><input type="password" placeholder="model" name="password" /></li>
+</ul>
+<div class="pgindicator">
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+</div> <!-- pg indicator -->
+</form>
+</article>
+</div> <!-- wrapper -->
+</div> <!-- page-three -->
 
 <!-- CONFIRM INFO -->
 
-	<div data-role="page" id="four" data-url="four" class="content">
-		<div class="wrapper">
-			<header>
-				<h2>Carbon Tracker</h2>
-			</header>
-			<h3>Confirm Your Information</h3>
+<div data-role="page" id="four" data-url="four" class="content">
+<div class="wrapper">
+<header>
+<h2>Carbon Tracker</h2>
+</header>
+<h3>Confirm Your Information</h3>
 
-			<div id="reviewOrder">
-				<ul>
-					<li><input type="text" id="confirm-name" placeholder="user name" name="userName" /></li>
-					<li><input type="text" id="confirm-email" placeholder="email" name="email" /></li>
-					<li><input type="password" id="confirm-password" placeholder="password" name="password" /></li>
-					<li><input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" /></li>
-					<li><input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" /></li>
-					<li><input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" /></li>
-					<li><input type="text" id="confirm-year" placeholder="year" name="year" /></li>
-					<li>
-						<button class="ui-btn signInBtn submitBtn" onclick="createUser();" id="lightblue"><a href="#five">Sign In</a></button>
-					</li>
-				</ul>
-			</div> <!-- reviewOrder -->
+<div id="reviewOrder">
+<ul>
+<li><input type="text" placeholder="user name" name="userName" /></li>
+<li><input type="text" placeholder="email" name="email" /></li>
+<li><input type="password" placeholder="password" name="password" /></li>
+<li><input type="text" placeholder="vehicle make" name="vehicle make" /></li>
+<li><input type="text" placeholder="vehicle model" name="vehicle model" /></li>
+<li><input type="text" placeholder="enginesize" name="enginesize" /></li>
+<li><input type="text" placeholder="year" name="year" /></li>
+</ul>
+</div> <!-- reviewOrder -->
 
-			<div class="pgindicator">
-				<div class="circle"></div>
-				<div class="circle"></div>
-				<div class="circle activeSlide"></div>
-			</div> <!-- pg indicator -->
-		</div> <!-- wrapper -->
-	</div> <!-- page-four -->
+<div class="submitBtn" onclick="createUser();"><img src="images/submitBtn.png" alt="page2"></div>
+<div class="pgindicator">
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+</div> <!-- pg indicator -->
+</div> <!-- wrapper -->
+</div> <!-- page-four -->
 
 <!-- Sign Up -->
-	<div data-role="page" id="five" data-url="five" class="content">
-		<div class="wrapper">
-		<header>
-			<h2>Carbon Tracker</h2>
-		</header>
-		<div class="image"><img src="logo.png" alt="logo"></div>
-		<article>
-			<form class="signUp">
-				<ul>
-					<li><input type="text" placeholder="email" name="email" /></li>
-					<li><input type="password" placeholder="password" name="password" /></li>
-					<li><button class="ui-btn signInBtn" onclick="loginUser()"id="lightblue"><a href="#five">Sign In</a></button></li>	
-				</ul>
-			</form>
-		</article>
+<div data-role="page" id="five" data-url="five" class="content">
+<div class="wrapper">
+<header>
+<h2>Carbon Tracker</h2>
+</header>
+<div class="image"><img src="logo.png" alt="logo"></div>
+
+<form class="signUp">
+<ul>
+<li><input type="text" placeholder="email" name="email" /></li>
+<li><input type="password" placeholder="password" name="password" /></li>
+</ul>
+</form>
+
+<div class="signInBtn"><a href="#six"><img src="images/car.png" alt="signIn button"></a></div>
+
+</div> <!-- wrapper -->
+</div> <!-- page-five -->
 
 <!-- START TRACKING -->
 <div data-role="page" id="six" data-url="six" class="content">
@@ -174,7 +172,7 @@
 
 
 <h3 class="black">Start tracking your carbon dioxide emissions today!</h3>
- 
+
 
 <div id="links">
 <a href="#seven"><img src="images/planTrip.png" alt="planTrip"></a>
@@ -184,21 +182,21 @@
 </div> <!-- page-six -->
 
 <!-- Trip Planner -->
-	<div data-role="page" id="seven" data-url="seven" class="content">
-		<div class="wrapper2">
-			<header>
-				<div class="profile"> </div>	
-				<h2>Carbon Tracker</h2>
-			
-				<div class="pMenu">
-						<ul data-theme="d">
-							<li><a href="#nine">User Info</a></li>
-							<li><a href="#nine">Vehicle Info</a></li>
-							<li><a href="#nine">Emissions Stats</a></li>
-							<li><a href="#nine">Logout</a></li>
-						</ul>
-					</div> <!-- pMenu -->
-			</header>
+<div data-role="page" id="seven" data-url="seven" class="content">
+<div class="wrapper2">
+<header>
+<img class="profile" alt="Profile image" />	
+<h2>Carbon Tracker</h2>
+
+<div class="pMenu">
+<ul data-theme="d">
+<li><a href="">User Info</a></li>
+<li><a href="">Vehicle Info</a></li>
+<li><a href="#nine">Emissions Stats</a></li>
+<li><a href="">Logout</a></li>
+</ul>
+</div> <!-- pMenu -->
+</header>
 
 <h3 class="black">Trip Planner</h3>
 
@@ -240,24 +238,13 @@
 
 
 <!-- EMISSIONS STATS-->
+<div data-role="page" id="nine" data-url="nine" class="content">
+<div class="wrapper">
+<header>
+<h2>Carbon Tracker</h2>
+</header>
 
-	<div data-role="page" id="nine" data-url="nine" class="content">
-		<div class="wrapper">
-			<header>
-				<div class="profile"> </div>
-				<h2>Carbon Tracker</h2>
-					<div class="pMenu">
-						<ul data-theme="d">
-							<li><a href="#nine">User Info</a></li>
-							<li><a href="#nine">Vehicle Info</a></li>
-							<li><a href="#nine">Emissions Stats</a></li>
-							<li><a href="#nine">Logout</a></li>
-						</ul>
-					</div> 
-			</header>
-			
-			<h3>Distance Travelled</h3><span class=""></span>
-
+<h3>Distance Travelled</h3><span class=""></span>
 
 <h3>Youve Produced</h3><span class=""></span><h3>of carbon dioxide</h3>
 
