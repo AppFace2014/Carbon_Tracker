@@ -79,6 +79,8 @@ function calcRoute() {
       var stat3 = document.getElementById('resultsOutput3');
         stat3.innerHTML = '<h2>Emissions:</h2> <p>' + distanceinKM + ' Kilograms</p>';
       directionsDisplay.setDirections(response);
+    } else {
+        alert("Error: please try again")
     }
   });
 }
