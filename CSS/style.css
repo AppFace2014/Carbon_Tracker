@@ -1,4 +1,3 @@
-
 .ui-page-theme-a{
 	text-shadow:none;
 	color:white;
@@ -217,7 +216,7 @@ h3.black {
 				clear: both;
 				position: absolute;
 				right:-155px; /* Open 5px Closed -155px */
-				top:45px;
+				top:-12px;
 				width: 150px;
 <<<<<<< HEAD
 				height: 400px;
@@ -234,6 +233,7 @@ h3.black {
 					width: 90%;
 					height: 90%;
 					margin: 0 auto;
+					margin-top:20px;
 				}
 
 					header .pMenu ul li{
