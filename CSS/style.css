@@ -173,7 +173,11 @@ color: #4D4D4D}
 	background: url('../images/opacity-car.png') no-repeat;  
 	background-position:center;
 }
-
+/*START DRIVING BUTTON*/
+#startDriving{
+	width:80%;
+	margin:0 auto 50px;
+}
 
 /* james code */
 
