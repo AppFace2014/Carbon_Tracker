@@ -4,14 +4,15 @@ window.onload=function(){
 	
 	jQuery('.profile').on("tap",function(){
 		changeMenu();
+
 	});
 
 	jQuery('.pMenu').on("tap",function(){
-		jQuery('.pMenu').animate({
-			right: "-155px"
-        }, 300);
-		menuStatus = "closed";
+		changeMenu();
 	});
+	$('#two').on("swipeleft", function(){
+
+
 	$('#two').on("swipeleft", function(){
 
 	//Set last page signup values
@@ -37,6 +38,12 @@ reverse: true}, true, true);
 }
 });
 	$('#three').on("swipeleft", function(){
+
+	//Set last page signup values
+	document.getElementById("confirm-year").value = document.getElementById("signup-year").value;
+	document.getElementById("confirm-make").value = document.getElementById("signup-make").value;
+	document.getElementById("confirm-model").value = document.getElementById("signup-model").value;
+	document.getElementById("confirm-engine").value = document.getElementById("signup-engine").value;
 var nextpage = $(this).next('div[data-role="page"]');
 if (nextpage.length > 0) {
 $.mobile.changePage(nextpage, "slide", false, true);
@@ -51,35 +58,3 @@ reverse: true}, true, true);
 }
 });
 };
-/*window.pageload=function(){
-	
-};
-
-window.pagechange = function(){
-	jQuery('#profile').on("tap",function(){
-		changeMenu();
-	});
-
-	jQuery('#pMenu').on("tap",function(){
-		jQuery('#pMenu').animate({
-			right: "-155px"
-        }, 300);
-		menuStatus = "closed";
-	});
-}*/
-
-function changeMenu(){
-	if (menuStatus != "open"){
-		console.log("open");
-		jQuery('.pMenu').animate({
-			right: "5px"
-       	}, 300);
-		menuStatus = "open";
-	} else {
-		console.log("closed");
-		jQuery('.pMenu').animate({
-			right: "-155px"
-       	}, 300);
-		menuStatus = "closed";
-	}	
-}
