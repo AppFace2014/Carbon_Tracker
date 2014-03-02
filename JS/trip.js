@@ -59,30 +59,29 @@ function calcRoute() {
   };
   directionsService.route(request, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
-      console.log(response.routes[0].legs[0].distance.value + " meters");
-      var distanceinKM = response.routes[0].legs[0].distance.value/1000;
-      console.log(distanceinKM + " KMs");
-
-      Parse.User.current().fetch().then(function (user) {
-          var userEmail = user.get('email');
-          console.log(userEmail);
-      });
-
-      var stat1 = document.getElementById('resultsOutput1');
-        stat1.innerHTML = '<h4>Distance:</h4> <p>' + distanceinKM + ' Kilometers</p>';
-      directionsDisplay.setDirections(response);
-
-      var stat2 = document.getElementById('resultsOutput2');
-        stat2.innerHTML = '<h4>Fuel Consumption:</h4> <p>' + distanceinKM + ' Liters</p>';
-      directionsDisplay.setDirections(response);
-
-      var stat3 = document.getElementById('resultsOutput3');
-        stat3.innerHTML = '<h4>Emissions:</h4> <p>' + distanceinKM + ' Kilograms</p>';
-      directionsDisplay.setDirections(response);
+      calcStats(response);
     } else {
         alert("Error: please try again");
     }
+    
   });
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
+
+function calcStats(e){
+
+    Parse.User.current().fetch().then(function (user) {
+          var userEmail = user.get('email');
+          console.log(userEmail);
+      });
+      var km = e.routes[0].legs[0].distance.value/100;
+      var stat1 = document.getElementById('resultsOutput1');
+        stat1.innerHTML = '<h4>Distance:</h4> <p>' + km + ' Kilometers</p>';
+
+      var stat2 = document.getElementById('resultsOutput2');
+        stat2.innerHTML = '<h4>Fuel Consumption:</h4> <p>' + km + ' Liters</p>';
+
+      var stat3 = document.getElementById('resultsOutput3');
+        stat3.innerHTML = '<h4>Emissions:</h4> <p>' + km + ' Kilograms</p>';
+}
+
