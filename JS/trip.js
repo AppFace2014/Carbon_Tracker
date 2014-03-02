@@ -3,6 +3,7 @@ var directionsService = new google.maps.DirectionsService();
 var map;
 
 function initialize() {
+  // Sets google map options
   var mapOptions = {
     zoom: 16
   };
