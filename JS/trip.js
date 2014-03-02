@@ -63,6 +63,11 @@ function calcRoute() {
       var distanceinKM = response.routes[0].legs[0].distance.value/1000;
       console.log(distanceinKM + " KMs");
 
+      Parse.User.current().fetch().then(function (user) {
+          user.get('email');
+          console.log(user.get('email'));
+      });
+
       var el = document.getElementById('resultsOutput');
         el.innerHTML = '<p> Distance: ' + distanceinKM + 'KMs</p>';
       directionsDisplay.setDirections(response);
