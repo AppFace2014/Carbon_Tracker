@@ -8,7 +8,7 @@ body{
 	}
 
 	#one, #two, #three, #four, #five{
-		width:90%;
+		width:100%;
 		height:auto;
 	}
 
@@ -53,6 +53,7 @@ body{
 				width: 150px;
 				height: 400px;
 				padding-top: 10px;
+				z-index: 20;
 			}	
 
 				header .pMenu ul{
@@ -83,8 +84,8 @@ body{
 						}
 
 		section{
-			width:1300px;
-			height: 500px;
+			width:100%;
+			height: auto;
 			background: blue;
 			float: none;
 		}
@@ -93,6 +94,14 @@ body{
 			section button{
 				display: block;
 				margin: 0 auto;
+			}
+
+			section #map_canvas{
+				z-index: 0;
+			}
+
+			section #locations{
+				width:100%;
 			}
 
 		footer{
