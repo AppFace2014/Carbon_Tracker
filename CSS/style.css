@@ -1,33 +1,201 @@
-body{
-	
+
+.ui-page-theme-a{
+	text-shadow:none;
+	color:white;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
 }
 
-	.container{
-		margin: 0 auto;
-		overflow-x: hidden;
-	}
+*{
+	margin:0px;
+	padding:0px;
+	text-shadow:none;
+}
+.wrapper{
+	margin: auto;
+	background: url('../images/bg.png') no-repeat;
+	background-size: cover;
+	height: auto;
+	width:100%;
+}
+.wrapper2{
+	margin: auto;
+	background-color: #e6e6e6;
+	height: auto;
+	width:100%;	
+}
+header{
+	background-color: #355154;
+}
+/*IMG*/
+img{
+	padding-bottom:50px;
+	display: block;
+	margin: 0 auto;
+}
+/*logo*/
+h1.image{
+	padding-bottom: 85px;
+	margin: auto;
+	margin-left: 0px;
+}
 
+<<<<<<< HEAD
 	#one, #two, #three, #four, #five{
 		width:100%;
 		height:auto;
 	}
+=======
+h2{
+	font-size: 18px;
+	color: white;
+	font-family: futura;
+	padding: 15px;
+	text-align: center;
+}
+h3{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+	font-size: 16px;
+}
+>>>>>>> FETCH_HEAD
 
-		header{
-			position: relative;
-			width:100%;
-			height:50px;
-			background: pink;
-		}	
+/*ARTICLE SECTION*/
+article{
+	width:100%;
+}
 
-			header .logo{
-				float: left;
-				margin: 5px;
-				width: 40px;
-				height:40px;
-				text-indent: -9999px;
-				display: inline-block;
-				background: url(../Images/logo.png) no-repeat black;
-			}
+article ul li{
+	list-style-type: none;
+	margin:0 auto;
+	width: 80%;
+}
+
+/*BUTTONS*/
+
+/*pgone button*/
+.ui-page-theme-a .ui-btn{
+	width:100%;
+	height:50px;
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+	background-color: rgba(80, 172,162,.9);
+}
+.ui-page-theme-a .ui-btn a{
+	color:rgba(255,255,255,1);
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.ui-page-theme-a .ui-btn:hover{
+	background-color: rgba(80, 172,162,1);
+	text-shadow:none;
+}
+#lightblue{
+	background-color: rgba(123, 201, 182,.9);
+}
+#lightblue:hover{
+	background-color: rgba(123, 201, 182,1);
+	text-shadow:none;
+}
+
+
+
+/*FORM*/
+form{
+	margin-top:15px;
+	padding-bottom: 80px;	
+}
+form ul li input{
+	padding: 10px;
+	margin-top: 10px;
+}
+
+/*INPUT*/
+.ui-input-text{
+	border-radius: 0;
+	border:solid white 2px;
+}
+.ui-input-text input, .ui-input-search input{
+	color:white;
+}
+.ui-body-a, .ui-page-theme-a .ui-body-inherit{
+	background-color:transparent;
+	text-shadow:none;
+	margin-bottom: 30px;
+}
+.ui-page-themea, .ui-focus{
+	box-shadow: none;
+}
+
+/*PAGE INDICATORS*/
+.pgindicator{
+	width:100%;
+	background-color: pink;
+    padding: 0;
+    height: 14px;
+    z-index: 999;
+}
+.circle{
+	width:45px;
+	height:45px;
+	border-radius:100;
+	border: white solid 2px;
+}
+.activeSlide{
+
+}
+
+
+
+ul li{
+	list-style-type: none;
+}
+ul li .pgindicator{
+	margin-left: 25%;
+}
+
+a{
+	color:rgba(255,255,255,1);
+	text-decoration: none;
+}
+#reviewOrder{
+	padding: 10px;
+	width: 200px;
+	margin: auto;
+}.submitBtn{
+	margin-left: 15px;
+}
+form.signUp{
+	width:200px;
+	margin:auto;
+	padding-bottom: 20px;
+}
+.signInBtn img{
+	padding: 15px;
+	margin: auto;
+}
+#links{
+	padding-top: 20px;
+}
+#links img{
+	padding-bottom: 10px;
+	padding-right: 10px;
+	margin-right: 0px;
+}
+h3.black {
+	color: black;
+}
+
+
+/* james code */
+
+
+	
 
 			header h1{
 				float: left;
@@ -41,7 +209,9 @@ body{
 				width: 40px;
 				height: 40px;
 				text-indent: -9999px;
-				background: url(..Imgages/profile.png) no-repeat black;
+				background: url(../images/nav.png) no-repeat;
+				background-size: 100%;
+
 			}
 
 			header .pMenu{
@@ -49,40 +219,45 @@ body{
 				position: absolute;
 				right:-155px; /* Open 5px Closed -155px */
 				top:45px;
-				background: green;
 				width: 150px;
+<<<<<<< HEAD
 				height: 400px;
 				padding-top: 10px;
+=======
+				height: 250px;
+				margin-top: 65px;
+				background-color: white;
+>>>>>>> FETCH_HEAD
 				z-index: 20;
 			}	
 
 				header .pMenu ul{
-					background: red;
 					width: 90%;
 					height: 90%;
 					margin: 0 auto;
 				}
 
 					header .pMenu ul li{
-						background: purple;
 						width:100%;
 						height:auto;
 						display: block;
 						margin: 10px 0;
+						border-bottom: 1px solid white;
 					}
 
 						header .pMenu ul li a{
-							background: pink;
 							width: 100%;
 							padding: 10px 0;
 							display: block;
 							text-align: center;
+
 						}
 
 						header .pMenu ul li a:hover{
-							background: green;
+							background-color: #e6e6e6;
 						}
 
+<<<<<<< HEAD
 		section{
 			width:100%;
 			height: auto;
@@ -116,7 +291,7 @@ body{
 				text-align: center;
 				cursor: default;
 			}
+=======
+>>>>>>> FETCH_HEAD
 
-				footer p span{
-					font-weight: bold;
-				}
+				
