@@ -99,9 +99,10 @@
 
 <form>
 <ul>
-<li><input type="text" placeholder="year" name="username" /></li>
-<li><input type="password" placeholder="make" name="password" /></li>
-<li><input type="password" placeholder="model" name="password" /></li>
+<li><input type="text" id="signup-year" placeholder="year" name="year" /></li>
+<li><input type="text" id="signup-make" placeholder="make" name="make" /></li>
+<li><input type="text" id="signup-model" placeholder="model" name="model" /></li>
+<li><input type="text" id="signup-engine" placeholder="engine" name="engine" /></li>
 </ul>
 <div class="pgindicator">
 <div class="circle"></div>
@@ -124,13 +125,13 @@
 
 <div id="reviewOrder">
 <ul>
-<li><input type="text" placeholder="user name" name="userName" /></li>
-<li><input type="text" placeholder="email" name="email" /></li>
-<li><input type="password" placeholder="password" name="password" /></li>
-<li><input type="text" placeholder="vehicle make" name="vehicle make" /></li>
-<li><input type="text" placeholder="vehicle model" name="vehicle model" /></li>
-<li><input type="text" placeholder="enginesize" name="enginesize" /></li>
-<li><input type="text" placeholder="year" name="year" /></li>
+<li><input type="text" id="confirm-name" placeholder="user name" name="userName" /></li>
+<li><input type="text" id="confirm-email" placeholder="email" name="email" /></li>
+<li><input type="password" id="confirm-password" placeholder="password" name="password" /></li>
+<li><input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" /></li>
+<li><input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" /></li>
+<li><input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" /></li>
+<li><input type="text" id="confirm-year" placeholder="year" name="year" /></li>
 </ul>
 </div> <!-- reviewOrder -->
 
@@ -153,12 +154,12 @@
 
 <form class="signUp">
 <ul>
-<li><input type="text" placeholder="email" name="email" /></li>
-<li><input type="password" placeholder="password" name="password" /></li>
+<li><input type="text" id="login-name" placeholder="user name" name="username" /></li>
+<li><input type="password" id="login-password" placeholder="password" name="password" /></li>
 </ul>
 </form>
 
-<div class="signInBtn"><a href="#six"><img src="images/car.png" alt="signIn button"></a></div>
+<div class="signInBtn" onclick="loginUser()"><img src="images/car.png" alt="signIn button"></div>
 
 </div> <!-- wrapper -->
 </div> <!-- page-five -->
