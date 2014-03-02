@@ -41,6 +41,7 @@
 					<li><button class="ui-btn"><a href="#two">I'm New</a></button></li>
 					<li><button class="ui-btn" id="lightblue"><a href="#five">Sign In</a></button></li>	
 				</ul>
+
 				<a id="link" href="#six">Continue to Site</a>
 			</article>
 
@@ -69,8 +70,8 @@
 					</ul>
 					<div class="pgindicator">
 						<div class="circle activeSlide"></div>
-						<div class="circle activeSlide"></div>
-						<div class="circle activeSlide"></div>
+						<div class="circle"></div>
+						<div class="circle"></div>
 					</div> <!-- pg indicator -->
 				</form>
 			</article>
@@ -84,19 +85,22 @@
 			<header>
 				<h2>Carbon Tracker</h2>
 			</header>
+
 			<h3>Add Vehicle</h3>
+
 			<article>
-				<div class="image"><img src="car.png" alt="car"></div>
-		
+				<div class="image"><img src="images/car.png" alt="car"></div>
 				<form>
 					<ul>
-						<li><input type="text" placeholder="year" name="username" /></li>
-						<li><input type="password" placeholder="make" name="password" /></li>
-						<li><input type="password" placeholder="model" name="password" /></li>
+						<li><input type="text" id="signup-year" placeholder="year" name="year" /></li>
+						<li><input type="text" id="signup-make" placeholder="make" name="make" /></li>
+						<li><input type="text" id="signup-model" placeholder="model" name="model" /></li>
+						<li><input type="text" id="signup-engine" placeholder="engine" name="engine" /></li>
 					</ul>
+
 					<div class="pgindicator">
 						<div class="circle"></div>
-						<div class="circle"></div>
+						<div class="circle activeSlide"></div>
 						<div class="circle"></div>
 					</div> <!-- pg indicator -->
 				</form>
@@ -115,21 +119,23 @@
 
 			<div id="reviewOrder">
 				<ul>
-					<li><input type="text" placeholder="user name" name="userName" /></li>
-					<li><input type="text" placeholder="email" name="email" /></li>
-					<li><input type="password" placeholder="password" name="password" /></li>
-					<li><input type="text" placeholder="vehicle make" name="vehicle make" /></li>
-					<li><input type="text" placeholder="vehicle model" name="vehicle model" /></li>
-					<li><input type="text" placeholder="enginesize" name="enginesize" /></li>
-					<li><input type="text" placeholder="year" name="year" /></li>
+					<li><input type="text" id="confirm-name" placeholder="user name" name="userName" /></li>
+					<li><input type="text" id="confirm-email" placeholder="email" name="email" /></li>
+					<li><input type="password" id="confirm-password" placeholder="password" name="password" /></li>
+					<li><input type="text" id="confirm-make" placeholder="vehicle make" name="vehicle make" /></li>
+					<li><input type="text" id="confirm-model" placeholder="vehicle model" name="vehicle model" /></li>
+					<li><input type="text" id="confirm-engine" placeholder="enginesize" name="enginesize" /></li>
+					<li><input type="text" id="confirm-year" placeholder="year" name="year" /></li>
+					<li>
+						<button class="ui-btn signInBtn submitBtn" onclick="createUser();" id="lightblue"><a href="#five">Sign In</a></button>
+					</li>
 				</ul>
 			</div> <!-- reviewOrder -->
 
-			<div class="submitBtn" onclick="createUser();"><img src="images/submitBtn.png" alt="page2"></div>
 			<div class="pgindicator">
 				<div class="circle"></div>
 				<div class="circle"></div>
-				<div class="circle"></div>
+				<div class="circle activeSlide"></div>
 			</div> <!-- pg indicator -->
 		</div> <!-- wrapper -->
 	</div> <!-- page-four -->
@@ -141,15 +147,15 @@
 			<h2>Carbon Tracker</h2>
 		</header>
 		<div class="image"><img src="logo.png" alt="logo"></div>
-
-		<form class="signUp">
-			<ul>
-				<li><input type="text" placeholder="email" name="email" /></li>
-				<li><input type="password" placeholder="password" name="password" /></li>
-			</ul>
-		</form>
-
-		<div class="signInBtn"><a href="#six"><img src="images/car.png" alt="signIn button"></a></div>
+		<article>
+			<form class="signUp">
+				<ul>
+					<li><input type="text" placeholder="email" name="email" /></li>
+					<li><input type="password" placeholder="password" name="password" /></li>
+					<li><button class="ui-btn signInBtn" onclick="loginUser()"id="lightblue"><a href="#five">Sign In</a></button></li>	
+				</ul>
+			</form>
+		</article>
 
 		</div> <!-- wrapper -->
 	</div> <!-- page-five -->

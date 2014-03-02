@@ -101,12 +101,16 @@ article ul li{
 /*FORM*/
 form{
 	margin-top:15px;
-	padding-bottom: 80px;	
+	padding-bottom: 50px;	
 }
 form ul li input{
 	padding: 10px;
 	margin-top: 10px;
 }
+ul li {
+	list-style-type: none;
+}
+
 
 /*INPUT*/
 .ui-input-text{
@@ -127,50 +131,33 @@ form ul li input{
 
 /*PAGE INDICATORS*/
 .pgindicator{
-	width:100%;
-	background-color: pink;
-    padding: 0;
-    height: 14px;
-    z-index: 999;
+	width:120px;
+	margin:0 auto;
+	margin-top: 50px;
 }
 .circle{
-	width:45px;
-	height:45px;
-	border-radius:100;
+	width:20px;
+	height:20px;
+	border-radius:50px;
 	border: white solid 2px;
+	display:inline-block;
+	margin-right: 20px;
+}
+.circle:last-of-type{
+	margin-right:0;
 }
 .activeSlide{
-
-}
-
-
-
-ul li{
-	list-style-type: none;
-}
-ul li .pgindicator{
-	margin-left: 25%;
+	background-color: rgba(255,255,255,.8);
 }
 
 a{
 	color:rgba(255,255,255,1);
 	text-decoration: none;
 }
+/*PAGE FOUR CONFIRMATION LIST*/
 #reviewOrder{
-	padding: 10px;
-	width: 200px;
-	margin: auto;
-}.submitBtn{
-	margin-left: 15px;
-}
-form.signUp{
-	width:200px;
-	margin:auto;
-	padding-bottom: 20px;
-}
-.signInBtn img{
-	padding: 15px;
-	margin: auto;
+	width: 80%;
+	margin: 0 auto;
 }
 #links{
 	padding-top: 20px;
@@ -181,7 +168,7 @@ form.signUp{
 	margin-right: 0px;
 }
 h3.black {
-	color: black;
+	color: #4D4D4D;
 }
 
 
