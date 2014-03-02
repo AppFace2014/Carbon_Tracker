@@ -59,7 +59,7 @@ function calcRoute() {
   };
   directionsService.route(request, function(response, status) {
     if (status == google.maps.DirectionsStatus.OK) {
-      console.log(response.routes[0].legs[0].distance.value + " meters";);
+      console.log(response.routes[0].legs[0].distance.value + " meters");
       directionsDisplay.setDirections(response);
     }
   });
